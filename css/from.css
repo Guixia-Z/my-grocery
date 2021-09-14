@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+
+Form{
+    width: 500px;
+    margin: auto;
+    box-shadow: 1px 1px 5px 1px lightsteelblue;
+    border-radius: 10px;
+    background-color:  rgb(240, 240, 240);
+}
+#formbuttons{
+    text-align: center;     
+}
+#formbuttons input{
+    background-color: white;
+}
+fieldset{
+    border: none;
+}
+label{
+    margin-bottom: 20px;
+}
+fieldset:first-child{   
+    padding-top: 30px;
+}
+input{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+}
+input:hover{
+    background-color: beige;
+}
+input[type=text],input[type=tel]{
+    box-shadow: 1px 1px 5px 1px lightsteelblue;
+}
+input[type=button],input[type=submit]{
+    margin: 20px;
+    padding: 5px 10px;
+    width: 100px;
+}
+#expMonth,#expYear{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px lightsteelblue;
+}
+.cardImage{
+    width: 30px;
+}
+.row{
+    display: grid;
+    grid-template-columns: 1fr 0.8fr 0.5fr;
+    grid-gap: 10px;
+}
