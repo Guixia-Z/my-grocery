@@ -38,23 +38,23 @@
         <h1>Payment</h1>
         <form  name="paymentForm" id="paymentForm" method="post" action="" autocomplete="on">
             <fieldset>
-                <input name="card" id="visa" type="radio"/>
+                <input name="card" id="visa" type="radio" required/>
                 <label for="visa">Visa Card</label>
                 <img src="images/cc-visa.png" alt="visa" title="visa" class="cardImage"/><br/>
-                <input type="radio" id="master" name="card" />
+                <input type="radio" id="master" name="card" required/>
                 <label for="master">Master Card</label>
                 <img src="images/cc-mastercard.png" alt="master" title="master" class="cardImage"/><br/> 
-                <input type="radio" id="discover" name="card"/>
+                <input type="radio" id="discover" name="card" required/>
                 <label for="discover">Discover</label>
                 <img src="images/cc-discover.png" alt="discover" title="discover" class="cardImage"/><br/>
                 <label for="cardName">Name on Card</label><br/>
-                <input type="text" id="cardName" name="cardtName" size="30" autofocus="autofocus"/><br/>
+                <input type="text" id="cardName" name="cardtName" size="30" autofocus="autofocus" required pattern="^[A-Za-z ]*$"/><br/>
                 <label for="cardNumber">Card Number</label><br/>
-                <input type="text" id="cardNumber" name="cardNumber" size="30" autofocus="autofocus" placeholder="8888-8888-8888-8888-88"/><br/>
+                <input type="text" id="cardNumber" name="cardNumber" size="30" autofocus="autofocus" placeholder="8888-8888-8888-8888-88" required/><br/>
                 <div class="row">
                     <div class="col-1">
                         <label for="expMonth">Exp Month</label>
-                        <select name="expMonth" id="expMonth">
+                        <select name="expMonth" id="expMonth" >
                             <option value="0">select a month</option>
                             <option value="January">January</option>
                             <option value="February">February</option>
@@ -72,7 +72,7 @@
                     </div>
                     <div class="col-1">
                         <label for="expYear">Exp Year</label>
-                        <select name="expYear" id="expYear">
+                        <select name="expYear" id="expYear" >
                             <option value="2021">2021</option>
                             <option value="2022">2022</option>
                             <option value="2023">2023</option>
@@ -82,12 +82,12 @@
                     </div>
                     <div class="col-1">
                         <label for="cvv">CVV</label>
-                        <input type="text" name="cvv" id="cvv" size="3"/>
+                        <input type="text" name="cvv" id="cvv" size="3" required pattern="^\d{3}$"/>
                     </div>
                 </div>
             </fieldset>
             <p id="formbuttons">
-            <input type="button" name="prevb" id="prevb" value="Previous" />
+            <input type="button" name="prevb" id="prevb" value="Previous" onclick="location.href='deliveryDetail.html';"/>
             <input type="submit" name="nextb" id="nextb" value="Check Out"/>
             </p>
         </form>
