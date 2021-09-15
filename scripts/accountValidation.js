@@ -42,13 +42,18 @@ function validateCreateAccountForm(){
             return false;
         }
         var cpwd = document.getElementById("cPassword");
+        if(cpwd.value.length === 0){
+            alert("Please confirm your password.");
+            cpwd.style.backgroundColor = "rgba(255, 99, 71, 0.6)";
+            return false;
+        }
         if(cpwd.value === pwd.value){
             return true;
         }
         else{
             alert("two passwords are not same.");
             cpwd.value = "";
-            pwd.style.backgroundColor = "rgba(255, 99, 71, 0.6)";
+            cpwd.style.backgroundColor = "rgba(255, 99, 71, 0.6)";
             return false;
 
         }
