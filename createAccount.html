@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/grocery.css"/>
     <link rel="stylesheet" href="css/from.css"/>
-    
+    <script src="scripts/accountValidation.js"></script>
 </head>
 <body>
     <div class="header">
@@ -36,12 +36,12 @@
     </div>
     <div>
         <h1>Create account</h1>
-        <form  name="createAccountForm" id="createAccountForm" method="post" action="" autocomplete="on">
+        <form  name="createAccountForm" id="createAccountForm" method="post" action="#" onsubmit="return validateCreateAccountForm();">
             <fieldset>
                 <label for="email">Email</label><br/>
-                <input name="email" id="email" type="email" size="30" placeholder="John@gmail.com" autofocus="autofocus"/><br/>
+                <input name="email" id="email" type="text" size="30" placeholder="John@gmail.com" autofocus="autofocus"/><br/>
                 <label for="password">Password</label><br/>
-                <input type="password" id="password" name="password" size="50" autofocus="autofocus"/><br/> 
+                <input type="password" id="password" name="password" placeholder="8-12 characters, at least 1 number, no spaces" size="50" autofocus="autofocus"/><br/> 
                 <label for="cPassword">Confirm password</label><br/>
                 <input type="password" id="cPassword" name="cPassword" size="50" autofocus="autofocus"/><br/>
             </fieldset>
