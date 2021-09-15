@@ -8,10 +8,10 @@
     <title>Grocery Store | Order Confirmation</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/grocery.css" />
-    <link rel="stylesheet" href="/css/from.css">
-    <script src="scripts/store.js" async></script>
-
+    <link rel="stylesheet" href="css/grocery.css"/>
+    <link rel="stylesheet" href="css/from.css">
+    <script src="scripts/deliveryValidation.js"></script>
+    
 </head>
 
 <body>
@@ -40,24 +40,23 @@
         </div>
     </div>
     <div>
-        <h1>Shipping Information</h1>
-
-        <form name="deliveryForm" id="deliveryForm" method="post" action="payment.html" autocomplete="on">
+        <h1>Delivery Information</h1>
+        <form  name="deliveryForm" id="deliveryForm" method="post" action="payment.html" onsubmit="return validateDeliveryInfoForm();" >
             <fieldset>
-                <label for="firstName">First Name</label><br />
-                <input name="firstName" id="firstName" type="text" size="30" autofocus="autofocus" /><br />
-                <label for="lastName">Last Name</label><br />
-                <input type="text" id="lastName" name="lastName" size="30" autofocus="autofocus" /><br />
-                <label for="civicNumber">Civic Number</label><br />
-                <input type="text" id="civicNumber" name="civicNumber" size="10" autofocus="autofocus" /><br />
-                <label for="streetName">Street Name</label><br />
-                <input type="text" id="streetName" name="streetName" size="30" autofocus="autofocus" /><br />
-                <label for="streetName">City</label><br />
-                <input type="text" id="city" name="city" size="10" autofocus="autofocus" /><br />
-                <label for="streetName">Postal Code</label><br />
-                <input type="text" id="postCode" name="postCode" size="6" autofocus="autofocus" /><br />
-                <label for="streetName">Telephone</label><br />
-                <input type="tel" id="telephone" name="telephone" size="30" autofocus="autofocus" /><br />
+                <label for="firstName">First Name</label><br/>
+                <input name="firstName" id="firstName" type="text" size="30"  autofocus="autofocus"/><br/>
+                <label for="lastName">Last Name</label><br/>
+                <input type="text" id="lastName" name="lastName" size="30" autofocus="autofocus"/><br/> 
+                <label for="civicNumber">Civic Number</label><br/>
+                <input type="text" id="civicNumber" name="civicNumber" size="10" autofocus="autofocus"/><br/>
+                <label for="streetName">Street Name</label><br/>
+                <input type="text" id="streetName" name="streetName" size="30" autofocus="autofocus" /><br/>
+                <label for="city">City</label><br/>
+                <input type="text" id="city" name="city" size="10" autofocus="autofocus" /><br/>
+                <label for="postCode">Post Code</label><br/>
+                <input type="text" id="postCode" name="postCode" size="6" autofocus="autofocus"/><br/>
+                <label for="telephone">Telephone</label><br/>
+                <input type="tel" id="telephone" name="telephone" size="30" placeholder="888-888-8888" autofocus="autofocus"/><br/>
             </fieldset>
             <p id="formbuttons">
                 <input type="button" name="prevb" id="prevb" value="Previous" />
