@@ -40,7 +40,7 @@
     </div>
     <div>
         <h1>Payment</h1>
-        <form name="paymentForm" id="paymentForm" method="post" action="" autocomplete="on">
+        <form name="paymentForm" id="paymentForm" method="post" action="" autocomplete="on" onsubmit="return checkPaymentInfo();">
             <fieldset>
                 <input name="card" id="visa" type="radio" required/>
                 <label for="visa">Visa Card</label>
@@ -58,8 +58,8 @@
                 <div class="row">
                     <div class="col-1">
                         <label for="expMonth">Exp Month</label>
-                        <select name="expMonth" id="expMonth" >
-                            <option value="0">select a month</option>
+                        <select name="expMonth" id="expMonth" required="required">
+                            <option value="">select a month</option>
                             <option value="January">January</option>
                             <option value="February">February</option>
                             <option value="March">March</option>
@@ -76,7 +76,8 @@
                     </div>
                     <div class="col-1">
                         <label for="expYear">Exp Year</label>
-                        <select name="expYear" id="expYear" >
+                        <select name="expYear" id="expYear" required="required">
+                            <option value="">select a year</option>
                             <option value="2021">2021</option>
                             <option value="2022">2022</option>
                             <option value="2023">2023</option>
