@@ -1,65 +1,64 @@
 @charset "utf-8";
 
-#category-container{
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-gap: 20px;
+#category-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 20px;
 }
 
-#main{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 10px;
+#main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
 }
 
-.fruitImage{
-    width: 100%;
+.fruitImage {
+  width: 100%;
 }
 
-#aside{
-    height:fit-content;
+#aside {
+  height: fit-content;
 }
 
 #aside ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
-#aside li a{
-    display: block;
-    color:grey;
-    font-weight:400;
-    
+#aside li a {
+  display: block;
+  color: grey;
+  font-weight: 400;
 }
 
-#aside li a.active{
-    color: black;
-    font-weight: bolder;
+#aside li a.active {
+  color: black;
+  font-weight: bolder;
 }
 
-#main > div span{
-    display: block;
-    margin: 0 20px 20px;
+#main > div span {
+  display: block;
+  margin: 0 20px 20px;
 }
 
-.button{
-    background-color:red;
-    border: none;
-    padding: 0.5rem 2rem;
-    text-align: center;
-    cursor: pointer;
-    width:100%;
-    border-radius: 8px;
-    font-size: 16px;
-    color:white;
+.button {
+  background-color: red;
+  border: none;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
 }
 
-.button a{
-    color:white;
+.button a {
+  color: white;
 }
 
-.button:hover{
-    cursor: pointer;
-    background-color: rgb(100, 11, 11);
-    color:white;
-    opacity: 0.8;
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(100, 11, 11);
+  color: white;
+  opacity: 0.8;
 }
