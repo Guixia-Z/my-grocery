@@ -63,7 +63,7 @@ function validateDeliveryInfoForm(){
         return false;
     }
     var tel = document.getElementById("telephone");
-    var telPattern = /[1-9]{3})(-)([0-9]{3})(-)([0-9]{4})$/;
+    var telPattern = /^[1-9]{3})(-)([0-9]{3})(-)([0-9]{4})$/;
     if(!(tel.value.match(telPattern))){
         alert("Your telephone number need to be 888-888-8888");
         tel.focus();

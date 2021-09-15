@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store | Create Account</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/grocery.css"/>
+    <link rel="stylesheet" href="css/from.css"/>
+    
+</head>
+<body>
+    <div class="header">
+        
+           <div id="logo"> <a href="#">My Grocery</a></div>
+           <div id="navbar">
+           <ul>
+               <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Category</a>
+                    <div class="dropdown-content">
+                        <a href="#">Fruits and vegetables</a>
+                        <a href="#">Dairy and eggs</a>
+                        <a href="#">Bakery</a>
+                        <a href="#">Meat</a>
+                        <a href="#">Pantry</a>
+                        <a href="#">Meals</a>
+                    </div>
+                </li>
+               <li><a href="#">Flyer</a></li>
+               <li><a href="#">Service</a></li>
+               <li style="float:right"><a href="#"><img src="images/Account.png" alt="account" title="account" class="headerimage"/>My Account</a></li>
+               <li style="float:right"><a href="#"><img src="images/shopping cart.png" alt="shopping cart" title="shopping cart" class="headerimage"/></a></li>
+           </ul>
+           </div>
+    </div>
+    <div>
+        <h1>Create account</h1>
+        <form  name="createAccountForm" id="createAccountForm" method="post" action="" autocomplete="on">
+            <fieldset>
+                <label for="email">Email</label><br/>
+                <input name="email" id="email" type="email" size="30" placeholder="John@gmail.com" autofocus="autofocus"/><br/>
+                <label for="password">Password</label><br/>
+                <input type="password" id="password" name="password" size="50" autofocus="autofocus"/><br/> 
+                <label for="cPassword">Confirm password</label><br/>
+                <input type="password" id="cPassword" name="cPassword" size="50" autofocus="autofocus"/><br/>
+            </fieldset>
+            <p id="formbuttons">
+            <input type="reset" name="btnCancel" id="btnCancel" value="Cancel" />
+            <input type="submit" name="btnNext" id="btnNext" value="Create account" />
+            </p>
+        </form>
+    </div>
+
+    <div id="footer">
+        <p>Copyright &copy;My Grocery 2021</p>
+        
+        <a href="#">
+        <img src="images/bxl-instagram-alt.png" alt="instagram" title="instagram" class="footerimage"/></a>
+        <a href="#">
+        <img src="images/facebook3.png" alt="facebook" title="facebook" class="footerimage"/></a>
+        <a href="#">
+        <img src="images/twitter.png" alt="twitter" title="twitter" class="footerimage"/></a>
+        
+    </div>
+    
+</body>
+</html>
