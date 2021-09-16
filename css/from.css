@@ -56,3 +56,22 @@ input[type="submit"] {
   grid-template-columns: 1fr 0.8fr 0.5fr;
   grid-gap: 10px;
 }
+
+#feedbackForm{
+  padding-left: 50px;
+  padding-top: 30px;
+}
+
+#comment{
+  border: none;
+  box-shadow: 1px 1px 5px 1px lightsteelblue;
+  border-radius: 8px;
+}
+
+#sbtn{
+  background-color:salmon;
+}
+
+#sbtn:hover{
+  background-color: sienna;
+}

@@ -167,3 +167,18 @@ a:hover {
 a {
   color: black;
 }
+
+#done-content{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contactImage{
+  width: 30px;
+}
+
+#contact-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 20px;
+}
