@@ -71,7 +71,7 @@
 }
 
 .btn-danger:hover {
-  background-color: #cc4c4c;
+  background-color: red;
 }
 
 .cart-quantity-input {
@@ -106,17 +106,21 @@
   font-size: 1.5em;
   color: black;
   margin-right: 20px;
+  font-family: Oswald, sans-serif;
 }
 
 .cart-total-price {
   color: #333;
-  font-size: 1.1em;
+  font-size: 1.7em;
 }
 
 .btn-purchase {
   display: block;
   margin: 40px auto 80px auto;
   font-size: 1.75em;
+  background-color: #01ffff;
+  font-family: Oswald, sans-serif;
+  
 }
 
 .section-header {
@@ -124,6 +128,7 @@
     color: #333;
     text-align: center;
     font-size: 2.5em;
+    font-family: Oswald, sans-serif;;
 }
 
 .btn {
