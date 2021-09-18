@@ -16,7 +16,7 @@
 <body>
     <div class="header">
 
-        <div id="logo"> <a href="#">My Grocery</a></div>
+        <div id="logo"> <a href="index.html">My Grocery</a></div>
         <div id="navbar">
             <ul>
                 <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Category</a>
@@ -30,7 +30,12 @@
                     </div>
                 </li>
                 <li><a href="weekDeal.html">Flyer</a></li>
-                <li><a href="#">Service</a></li>
+                <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Service</a>
+                    <div class="dropdown-content">
+                        <a href="contactUs.html">Contact Us</a>
+                        <a href="#">Q & A</a>
+                    </div>
+                </li>
                 <li style="float:right"><a href="#"><img src="images/Account.png" alt="account" title="account"
                             class="headerimage" />My Account</a></li>
                 <li style="float:right"><a href="#"><img src="images/shopping-cart.png" alt="shopping cart"
@@ -40,7 +45,7 @@
     </div>
     <div>
         <h1>Payment</h1>
-        <form name="paymentForm" id="paymentForm" method="post" action="orderDone.html" autocomplete="on" onsubmit="return checkPaymentInfo();">
+        <form name="paymentForm" id="paymentForm" method="get" action="orderDone.html" autocomplete="on" onsubmit="return checkPaymentInfo();">
             <fieldset>
                 <input name="card" id="visa" type="radio" required/>
                 <label for="visa">Visa Card</label>
