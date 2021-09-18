@@ -1,7 +1,5 @@
 "use strict";
 
-//NOT FINAL...WORK IN PROGRESS
-
 if (document.readyState == "loading") {
   document.addEventListener("DOMContentLoaded", ready);
 } else {
@@ -33,8 +31,9 @@ function ready() {
 }
 
 function purchaseClicked() {
-  alert("Thank you for your purchase");
-  
+  if (cartItems > 0) alert("Thank you for your purchase");
+  else alert("You haven't selected anything");
+
   var cartItems = document.getElementsByClassName("cart-items")[0];
   while (cartItems.hasChildNodes()) {
     cartItems.removeChild(cartItems.firstChild);

@@ -62,3 +62,9 @@
   color: white;
   opacity: 0.8;
 }
+
+#directions{
+  font-family: Oswald, sans-serif;
+  font-size: large;
+  text-align: center;
+}

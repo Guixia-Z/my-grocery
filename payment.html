@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery Store | Payment</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/grocery.css" />
     <link rel="stylesheet" href="css/from.css" />
@@ -36,8 +38,8 @@
                         <a href="#">Q & A</a>
                     </div>
                 </li>
-                <li style="float:right"><a href="createAccount.html"><img src="images/Account.png" alt="account" title="account"
-                            class="headerimage" />My Account</a></li>
+                <li style="float:right"><a href="createAccount.html"><img src="images/Account.png" alt="account"
+                            title="account" class="headerimage" />My Account</a></li>
                 <li style="float:right"><a href="#"><img src="images/shopping-cart.png" alt="shopping cart"
                             title="shopping cart" class="headerimage" /></a></li>
             </ul>
@@ -45,26 +47,29 @@
     </div>
     <div>
         <h1>Payment</h1>
-        <form name="paymentForm" id="paymentForm" method="get" action="orderDone.html" autocomplete="on" onsubmit="return checkPaymentInfo();">
+        <form name="paymentForm" id="paymentForm" method="get" action="orderDone.html" autocomplete="on"
+            onsubmit="return checkPaymentInfo();">
             <fieldset>
-                <input name="card" id="visa" type="radio" required/>
+                <input name="card" id="visa" type="radio" required />
                 <label for="visa">Visa Card</label>
-                <img src="images/cc-visa.png" alt="visa" title="visa" class="cardImage"/><br/>
-                <input type="radio" id="master" name="card" required/>
+                <img src="images/cc-visa.png" alt="visa" title="visa" class="cardImage" /><br />
+                <input type="radio" id="master" name="card" required />
                 <label for="master">Master Card</label>
-                <img src="images/cc-mastercard.png" alt="master" title="master" class="cardImage"/><br/> 
-                <input type="radio" id="discover" name="card" required/>
+                <img src="images/cc-mastercard.png" alt="master" title="master" class="cardImage" /><br />
+                <input type="radio" id="discover" name="card" required />
                 <label for="discover">Discover</label>
-                <img src="images/cc-discover.png" alt="discover" title="discover" class="cardImage"/><br/>
-                <label for="cardName">Name on Card</label><br/>
-                <input type="text" id="cardName" name="cardtName" size="30" autofocus="autofocus" required pattern="^[A-Za-z ]*$"/><br/>
-                <label for="cardNumber">Card Number</label><br/>
-                <input type="text" id="cardNumber" name="cardNumber" size="30" autofocus="autofocus" placeholder="8888-8888-8888-8888-88" required/><br/>
+                <img src="images/cc-discover.png" alt="discover" title="discover" class="cardImage" /><br />
+                <label for="cardName">Name on Card</label><br />
+                <input type="text" id="cardName" name="cardName" size="30" autofocus="autofocus" required
+                    pattern="^[A-Za-z ]*$" maxlength="40" /><br />
+                <label for="cardNumber">Card Number</label><br />
+                <input type="text" id="cardNumber" name="cardNumber" size="30" placeholder="8888-8888-8888-8888"
+                    maxlength="20" required /><br />
                 <div class="row">
                     <div class="col-1">
                         <label for="expMonth">Exp Month</label>
                         <select name="expMonth" id="expMonth" required="required">
-                            <option value="">select a month</option>
+                            <option value="">Select month</option>
                             <option value="January">January</option>
                             <option value="February">February</option>
                             <option value="March">March</option>
@@ -82,7 +87,7 @@
                     <div class="col-1">
                         <label for="expYear">Exp Year</label>
                         <select name="expYear" id="expYear" required="required">
-                            <option value="">select a year</option>
+                            <option value="">Select year</option>
                             <option value="2021">2021</option>
                             <option value="2022">2022</option>
                             <option value="2023">2023</option>
@@ -92,13 +97,15 @@
                     </div>
                     <div class="col-1">
                         <label for="cvv">CVV</label>
-                        <input type="text" name="cvv" id="cvv" size="3" required pattern="^\d{3}$"/>
+                        <input type="text" name="cvv" id="cvv" size="3" required pattern="^\d{3}$" minlength="3"
+                            maxlength="3" />
                     </div>
                 </div>
             </fieldset>
             <p id="formbuttons">
-            <input type="button" name="prevb" id="prevb" value="Previous" onclick="location.href='javascript:history.go(-1)';"/>
-            <input type="submit" name="nextb" id="nextb" value="Check Out"/>
+                <input type="button" name="prevb" id="prevb" value="Previous"
+                    onclick="location.href='javascript:history.go(-1)';" />
+                <input type="submit" name="nextb" id="nextb" value="Check Out" />
             </p>
         </form>
     </div>
