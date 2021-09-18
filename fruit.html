@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--WORK IN PROGRESS-->
+
 
 <head>
     <meta charset="UTF-8">
@@ -23,19 +23,24 @@
             <ul>
                 <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Category</a>
                     <div class="dropdown-content">
-                        <a href="javascript:void(0)">Fruits and vegetables</a>
-                        <a href="javascript:void(0)">Dairy and eggs</a>
-                        <a href="javascript:void(0)">Bakery</a>
-                        <a href="javascript:void(0)">Meat</a>
-                        <a href="javascript:void(0)">Pantry</a>
-                        <a href="javascript:void(0)">Meals</a>
+                        <a href="fruit.html">Fruits and vegetables</a>
+                        <a href="#">Dairy and eggs</a>
+                        <a href="#">Bakery</a>
+                        <a href="#">Meat</a>
+                        <a href="#">Pantry</a>
+                        <a href="#">Meals</a>
                     </div>
                 </li>
                 <li><a href="weekDeal.html">Flyer</a></li>
-                <li><a href="javascript:void(0)">Service</a></li>
+                <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Service</a>
+                    <div class="dropdown-content">
+                        <a href="contactUs.html">Contact Us</a>
+                        <a href="#">Q & A</a>
+                    </div>
+                </li>
                 <li style="float:right"><a href="createAccount.html"><img src="images/Account.png" alt="account" title="account"
                             class="headerimage" />My Account</a></li>
-                <li style="float:right"><a href="javascript:void(0)"><img src="images/shopping-cart.png" alt="shopping cart"
+                <li style="float:right"><a href="#"><img src="images/shopping-cart.png" alt="shopping cart"
                             title="shopping cart" class="headerimage" /></a></li>
             </ul>
         </div>
@@ -57,8 +62,8 @@
                 <li><a href="weekDeal.html">Flyer</a></li>
                 <li><a href="#">Service</a>
                     <ul>
-                        <li><a href="javascript:void(0)">Contact us</a></li>
-                        <li><a href="javascript:void(0)">Q & A</a></li>
+                        <li><a href="contactUs.html">Contact us</a></li>
+                        <li><a href="#">Q & A</a></li>
                     </ul>
                 </li>
             </ul>
@@ -263,17 +268,20 @@
                 <strong class="cart-total-title">Total</strong>
                 <span class="cart-total-price">$0</span>
             </div>
-            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+            <form action="deliveryDetail.html" >
+               <input class="btn btn-primary btn-purchase" type="submit" name="purchase" id="purchase" value="PURCHASE"/> 
+            </form>
+            <!--button class="btn btn-primary btn-purchase" type="button" method="get" action="deliveryDetail.html">PURCHASE</button-->
         </div>
     </div>
     <div id="footer">
         <p>Copyright &copy; My Grocery 2021</p>
 
-        <a href="javascript:void(0)">
+        <a href="#">
             <img src="images/bxl-instagram-alt.png" alt="instagram" title="instagram" class="footerimage" /></a>
-        <a href="javascript:void(0)">
+        <a href="#">
             <img src="images/facebook3.png" alt="facebook" title="facebook" class="footerimage" /></a>
-        <a href="javascript:void(0)">
+        <a href="#">
             <img src="images/twitter.png" alt="twitter" title="twitter" class="footerimage" /></a>
 
     </div>
