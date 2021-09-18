@@ -17,7 +17,7 @@
 <body>
     <div class="header">
 
-        <div id="logo"> <a href="#">My Grocery</a></div>
+        <div id="logo"> <a href="index.html">My Grocery</a></div>
         <div id="navbar">
             <ul>
                 <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Category</a>
@@ -59,7 +59,7 @@
                 <input type="tel" id="telephone" name="telephone" size="30" placeholder="888-888-8888" autofocus="autofocus"/><br/>
             </fieldset>
             <p id="formbuttons">
-                <input type="button" name="prevb" id="prevb" value="Previous" />
+                <input type="button" name="prevb" id="prevb" value="Previous" onclick="location.href='javascript:history.go(-1)';"/>
                 <input type="submit" name="nextb" id="nextb" value="Next" />
             </p>
         </form>
