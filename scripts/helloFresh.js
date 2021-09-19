@@ -88,15 +88,7 @@ function prevMo() {
 function nextMo() {
   displayCalendar(1);
 }
-function updateTotalCost() {
-  var e = 25e4 * this.passengersOnTicket,
-    t = e / 60,
-    n = t.toFixed(0);
-  (document.getElementById("singleLabel").innerHTML =
-    "Single payment of $" + e.toLocaleString()),
-    (document.getElementById("multipleLabel").innerHTML =
-      "60 monthly payments of $" + n.toLocaleString());
-}
+
 function updateCountdown() {
   var e = new Date(),
     t = Date.UTC(
@@ -136,20 +128,20 @@ function updateCountdown() {
 function registerName() {
   var e,
     t,
-    n = document.getElementById("passengers"),
+    n = document.getElementById("dishes"),
     a = document.createElement("li");
-  (ticket.passengersOnTicket += 1),
-    (e = "fname" + ticket.passengersOnTicket),
+  (ticket.dishesOnTicket += 1),
+    (e = "nameRecipes" + ticket.dishesOnTicket),
 
-    (ticket.passengers[e] = document.getElementById("fname").value),
+    (ticket.dishes[e] = document.getElementById("nameRecipes").value),
 
-    (a.innerHTML = ticket.passengers[e]);
+    (a.innerHTML = ticket.dishes[e]);
     n.appendChild(a),
-    (document.getElementById("fname").value = ""),
+    (document.getElementById("nameRecipes").value = ""),
 
     (document.getElementById("ticket").style.display = "block"),
-    (document.getElementById("passengersSection").style.display = "block"),
-    document.getElementById("fname").focus(),
+    (document.getElementById("dishesSection").style.display = "block"),
+    document.getElementById("nameRecipes").focus(),
     ticket.calcCost();
 }
 function createEventListeners() {
@@ -182,7 +174,7 @@ function createEventListeners() {
 }
 var dateObject = new Date(),
   countdown,
-  ticket = { passengersOnTicket: 0, passengers: {}, calcCost: updateTotalCost };
+  ticket = { dishesOnTicket: 0, dishes: {}, calcCost: updateTotalCost };
 window.addEventListener
   ? window.addEventListener("load", createEventListeners, !1)
   : window.attachEvent && window.attachEvent("onload", createEventListeners);

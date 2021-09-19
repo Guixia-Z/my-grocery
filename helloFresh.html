@@ -53,15 +53,15 @@
             <form>
                 <fieldset class="checks">
                     <legend>Recipes per week</legend>
-                    <input type="radio" id="single" name="Payment" />
+                    <input type="radio" id="single" name="recipesQuantity" />
                     <label for="single" id="threeRecipes">3 Recipes per week for only $29.90</label>
-                    <input type="radio" id="multiple" name="Payment" />
+                    <input type="radio" id="multiple" name="recipesQuantity" />
                     <label for="multiple" id="fourRecipes">5 Recipes per week for only $39.90</label>
                 </fieldset>
                 <fieldset class="text">
                     <legend>What kind of recipes do you like?</legend>
-                    <label for="fname">What is your favorite food?</label>
-                    <input type="text" id="fname" />
+                    <label for="nameRecipes">What is your favorite food?</label>
+                    <input type="text" id="nameRecipes" />
                     <input type="button" value="Add" id="addName" />
                 </fieldset>
                 <fieldset>
@@ -145,10 +145,10 @@
                 <p id="countdown"></p>
             </section>
             <section id="ticket">
-                <div id="passengersSection">
+                <div id="dishesSection">
                     <h3 style="color: green">Order Details</h3>
                     <h4>Your favorite food:</h4>
-                    <ul id="passengers"></ul>
+                    <ul id="dishes"></ul>
                 </div>
                 <div id="dateSection">
                     <h4>Start Date</h4>
