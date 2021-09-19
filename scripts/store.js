@@ -31,10 +31,9 @@ function ready() {
 }
 
 function purchaseClicked() {
-  if (cartItems > 0) alert("Thank you for your purchase");
-  else alert("You haven't selected anything");
-
-  var cartItems = document.getElementsByClassName("cart-items")[0];
+  var cartItems = document.getElementsByClassName("cart-item-title")[0];
+  if (cartItems.length === 0)alert("You haven't selected anything");
+  else alert("Thank you for your purchase");
   while (cartItems.hasChildNodes()) {
     cartItems.removeChild(cartItems.firstChild);
   }
