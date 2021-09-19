@@ -20,6 +20,7 @@
   <style>
     ul.stars li {
       display: inline-block;
+      cursor: pointer;
     }
   </style>
 
@@ -103,40 +104,39 @@
 
   <script>
     $(function () {
-
       var isClicked = false;
       var beforeClickedIndex = -1;
       var clickNum = 0;
-      $('li').hover(
+      $("li").hover(
         function () {
           if (!isClicked) {
-            $(this).css('color', '#F0AD4E');
+            $(this).css("color", "#F0AD4E");
             var index = $(this).index();
             for (var i = 0; i <= index; i++) {
-              $('li:nth-child(' + i + ')').css('color', '#F0AD4E');
+              $("li:nth-child(" + i + ")").css("color", "#F0AD4E");
             }
           }
         },
         function () {
           if (!isClicked) {
-            $('li').css('color', '#ADADAD');
+            $("li").css("color", "black");
           }
         }
       );
 
-      $('li').click(function () {
-        $('li').css('color', '#ADADAD');
+      $("li").click(function () {
+        $("li").css("color", "black");
         isClicked = true;
         var index = $(this).index();
         for (var i = 1; i <= index + 1; i++) {
-          $('li:nth-child(' + i + ')').css('color', '#F0AD4E');
+          $("li:nth-child(" + i + ")").css("color", "#F0AD4E");
         }
         if (index == beforeClickedIndex) {
           clickNum++;
           if (clickNum % 2 == 1) {
-            $('li:nth-child(' + (index + 1) + ')').css('color', '#ADADAD');
+            $("li:nth-child(" + (index + 1) + ")").css("color", "black");
           } else {
-            $('li:nth-child(' + (index + 1) + ')').css('color', '#F0AD4E');
+            $("li:nth-child(" + (index + 1) + ")").css("color", "#F0AD4E");
           }
         } else {
           clickNum = 0;
