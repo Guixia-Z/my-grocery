@@ -168,18 +168,17 @@ a {
   color: black;
 }
 
-#done-content{
+#done-content {
   text-align: center;
   margin-top: 50px;
 }
 
-.contactImage{
+.contactImage {
   width: 30px;
 }
 
-#contact-container{
+#contact-container {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
 }
-

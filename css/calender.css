@@ -1,52 +1,49 @@
 @charset "utf-8";
 
-
 #calendar-table {
-    background-color: rgb(231, 231, 231);  
-    font-size: 0.9em; 
-    font-family: Oswald, sans-serif;
-    width: 100%;
- 
-    box-shadow: rgb(51, 51, 51) 0px 0px 1px,
-                rgb(51, 51, 51) 0px 0px 5px, 
-                rgb(51, 51, 51) 0px 0px 10px,
-                rgb(51, 51, 51) 0px 0px 20px;               
- }
- 
- #calendar-table caption {
-    caption-side: top; 
-    text-align: center;
-    padding-bottom: 20px; 
-    font-size: 1.6em; 
-    letter-spacing: 0.3em;
- }
- 
- .calendar-weekdays {
-    background-color: ivory;
-    width: 14.28%; 
-    font-size: 1em; 
-    border-bottom: 3px solid gray;
- }
- 
- .calendar-dates {
-    text-align: left; 
-    vertical-align: top;
-    font-size: 0.8em;
-    padding: 3px;
-    border: 1px dotted gray;
-    background-color: white;
-    height: 60px;
- }
- 
- #calendar-today {
-    font-weight: bold; 
-    color: rgb(51, 51, 51);
-    background-color: rgb(251, 203, 176);
-    border: 1px solid black;
- }
+  background-color: rgb(231, 231, 231);
+  font-size: 0.9em;
+  font-family: Oswald, sans-serif;
+  width: 100%;
 
- .dealImage{
-    width: 50px;
-    float: left;
-    clear: left;
- }
+  box-shadow: rgb(51, 51, 51) 0px 0px 1px, rgb(51, 51, 51) 0px 0px 5px,
+    rgb(51, 51, 51) 0px 0px 10px, rgb(51, 51, 51) 0px 0px 20px;
+}
+
+#calendar-table caption {
+  caption-side: top;
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 1.6em;
+  letter-spacing: 0.3em;
+}
+
+.calendar-weekdays {
+  background-color: ivory;
+  width: 14.28%;
+  font-size: 1em;
+  border-bottom: 3px solid gray;
+}
+
+.calendar-dates {
+  text-align: left;
+  vertical-align: top;
+  font-size: 0.8em;
+  padding: 3px;
+  border: 1px dotted gray;
+  background-color: white;
+  height: 60px;
+}
+
+#calendar-today {
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+  background-color: rgb(251, 203, 176);
+  border: 1px solid black;
+}
+
+.dealImage {
+  width: 50px;
+  float: left;
+  clear: left;
+}
