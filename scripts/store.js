@@ -33,7 +33,7 @@ function ready() {
 function purchaseClicked() {
   var cartItems = document.getElementsByClassName("cart-items")[0];
   //var cartItemNames = cartItems.getElementsByClassName("cart-item-title")[0].innerText;
-  if (number === 0)alert("You haven't selected anything");
+  if (number === 0) alert("You haven't selected anything");
   else alert("Thank you for your purchase");
   while (cartItems.hasChildNodes()) {
     cartItems.removeChild(cartItems.firstChild);
@@ -74,7 +74,7 @@ function addItemToCart(title, price) {
     if (cartItemNames[i].innerText == title) {
       alert("This item is already added to the cart");
       return;
-    }else number++;
+    } else number++;
   }
   var cartRowContents = `
         <div class="cart-item cart-column">

@@ -140,13 +140,10 @@ function registerName() {
     a = document.createElement("li");
   (ticket.passengersOnTicket += 1),
     (e = "fname" + ticket.passengersOnTicket),
-
     (ticket.passengers[e] = document.getElementById("fname").value),
-
     (a.innerHTML = ticket.passengers[e]);
-    n.appendChild(a),
+  n.appendChild(a),
     (document.getElementById("fname").value = ""),
-
     (document.getElementById("ticket").style.display = "block"),
     (document.getElementById("passengersSection").style.display = "block"),
     document.getElementById("fname").focus(),
