@@ -34,7 +34,7 @@
         <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Category</a>
           <div class="dropdown-content">
             <a href="fruit.html">Fruits and vegetables</a>
-            <a href="#">Dairy and eggs</a>
+            <a href="dairy.html">Dairy and eggs</a>
             <a href="#">Bakery</a>
             <a href="#">Meat</a>
             <a href="#">Pantry</a>
@@ -73,8 +73,13 @@
     </div>
     <div>
       <h1>Feedback</h1>
+<<<<<<< HEAD
       <form action="commentDone.html" id="feedbackForm">
         <caption>How about our service? </caption>
+=======
+      <form action="index.html" id="feedbackForm">
+        <caption>How was our service? </caption>
+>>>>>>> af298e7d1ee8d973d4908f8b9bf0de8a5e5d71e4
         <ul class="stars">
           <li>★</li>
           <li>★</li>
@@ -144,6 +149,12 @@
         }
       });
     });
+
+    document.getElementById("feedbackForm").addEventListener("submit", submitFunction);
+
+    function submitFunction() {
+      alert("Feedback submitted. Thank you.");
+    }
   </script>
 </body>
 
