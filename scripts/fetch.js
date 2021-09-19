@@ -8,10 +8,10 @@ searchButton.addEventListener("click", () => {
 
 //An asynchronous function to fetch data from the API.
 async function sendApiRequest() {
-  let apiId = "fbb3e7b9";
-  let apiKey = "249daf789883c9071d2a6edeccf1915c";
+  let APP_ID = "fbb3e7b9";
+  let API_KEY = "249daf789883c9071d2a6edeccf1915c";
   let response = await fetch(
-    `https://api.edamam.com/search?app_id={apiId}&app_key=${apiKey}&q=pizza`
+    `https://api.edamam.com/search?app_id=${APP_ID}&app_key=${API_KEY}&q=pizza`
   );
   //^ after q should be what user input is, above it's just pizza for now
   console.log(response);
