@@ -70,7 +70,7 @@ function selectDate(e) {
     );
   return a >= d
     ? ((document.getElementById("cal").style.display = "block"), !1)
-    : ((document.getElementById("tripDate").value =
+    : ((document.getElementById("startDate").value =
         dateObject.toLocaleDateString()),
       hideCalendar(),
       (countdown = setInterval(updateCountdown, 1e3)),
@@ -88,15 +88,7 @@ function prevMo() {
 function nextMo() {
   displayCalendar(1);
 }
-function updateTotalCost() {
-  var e = 25e4 * this.passengersOnTicket,
-    t = e / 60,
-    n = t.toFixed(0);
-  (document.getElementById("singleLabel").innerHTML =
-    "Single payment of $" + e.toLocaleString()),
-    (document.getElementById("multipleLabel").innerHTML =
-      "60 monthly payments of $" + n.toLocaleString());
-}
+
 function updateCountdown() {
   var e = new Date(),
     t = Date.UTC(
@@ -136,21 +128,21 @@ function updateCountdown() {
 function registerName() {
   var e,
     t,
-    n = document.getElementById("passengers"),
+    n = document.getElementById("favotiteMeals"),
     a = document.createElement("li");
-  (ticket.passengersOnTicket += 1),
-    (e = "fname" + ticket.passengersOnTicket),
-    (ticket.passengers[e] = document.getElementById("fname").value),
-    (a.innerHTML = ticket.passengers[e]);
+  (ticket.favotiteMealssOnTicket += 1),
+    (e = "fname" + ticket.favotiteMealsOnTicket),
+    (ticket.favotiteMeals[e] = document.getElementById("fname").value),
+    (a.innerHTML = ticket.favotiteMeals[e]);
   n.appendChild(a),
     (document.getElementById("fname").value = ""),
     (document.getElementById("ticket").style.display = "block"),
-    (document.getElementById("passengersSection").style.display = "block"),
+    (document.getElementById("recipesSection").style.display = "block"),
     document.getElementById("fname").focus(),
     ticket.calcCost();
 }
 function createEventListeners() {
-  var e = document.getElementById("tripDate");
+  var e = document.getElementById("startDate");
   e.addEventListener
     ? e.addEventListener("click", displayCalendar, !1)
     : e.attachEvent && e.attachEvent("onclick", displayCalendar);
@@ -179,7 +171,7 @@ function createEventListeners() {
 }
 var dateObject = new Date(),
   countdown,
-  ticket = { passengersOnTicket: 0, passengers: {}, calcCost: updateTotalCost };
+  ticket = { favotiteMealsOnTicket: 0, favotiteMeals: {}};
 window.addEventListener
   ? window.addEventListener("load", createEventListeners, !1)
   : window.attachEvent && window.attachEvent("onload", createEventListeners);

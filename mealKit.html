@@ -37,6 +37,8 @@
                 </li>
                 <li style="float:right"><a href="#"><img src="images/Account.png" alt="account" title="account"
                             class="headerimage" />My Account</a></li>
+                <li style="float:right"><a href="#"><img src="images/shopping-cart.png" alt="shopping cart"
+                            title="shopping cart" class="headerimage" /></a></li>
             </ul>
         </div>
     </div>
@@ -52,20 +54,20 @@
             <form>
                 <fieldset class="checks">
                     <legend>Recipes per week</legend>
-                    <input type="radio" id="single" name="Payment" />
+                    <input type="radio" id="single" name="numberRecipes" />
                     <label for="single" id="threeRecipes">3 Recipes per week for only $29.90</label>
-                    <input type="radio" id="multiple" name="Payment" />
+                    <input type="radio" id="multiple" name="numberRecipes" />
                     <label for="multiple" id="fourRecipes">5 Recipes per week for only $39.90</label>
                 </fieldset>
                 <fieldset class="text">
                     <legend>What kind of recipes do you like?</legend>
-                    <label for="fname">What is your favorite food?</label>
+                    <label for="fname">For an accurate selection of dishes, select at least three of your favorites</label>
                     <input type="text" id="fname" />
                     <input type="button" value="Add" id="addName" />
                 </fieldset>
                 <fieldset>
-                    <legend>Pick start date</legend>
-                    <input type="text" id="tripDate" />
+                    <legend>Choose the date from which we will start to make your life happy</legend>
+                    <input type="text" id="startDate" />
                 </fieldset>
             </form>
             <div id="cal">
@@ -144,10 +146,10 @@
                 <p id="countdown"></p>
             </section>
             <section id="ticket">
-                <div id="passengersSection">
+                <div id="recipesSection">
                     <h3 style="color: green">Order Details</h3>
                     <h4>Your favorite food:</h4>
-                    <ul style = "list-style-type: none;" id="passengers"></ul>
+                    <ul style = "list-style-type: none;" id="favotiteMeals"></ul>
                 </div>
                 <div id="dateSection">
                     <h4>Start Date</h4>
@@ -167,7 +169,7 @@
             <img src="images/twitter.png" alt="twitter" title="twitter" class="footerimage" /></a>
 
     </div>
-    <script src="/scripts/helloFresh.js"></script>
+    <script src="/scripts/mealKit.js"></script>
 </body>
 
 </html>
