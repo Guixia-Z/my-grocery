@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,37 +8,39 @@
     <title>Grocery Store | Create Account</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/grocery.css"/>
-    <link rel="stylesheet" href="css/from.css"/>
+    <link rel="stylesheet" href="css/grocery.css" />
+    <link rel="stylesheet" href="css/from.css" />
     <script src="scripts/accountValidation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
         integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
-        <style>
-            #eye1 img{
-                width: 30px;
-                position: relative;
-                left: -40px;
-                top: 10px;
-            }
-            #eye2 img{
-                width: 30px;
-                position: relative;
-                left: -40px;
-                top: 10px;
-            }
-        </style>
-    
+    <style>
+        #eye1 img {
+            width: 30px;
+            position: relative;
+            left: -40px;
+            top: 10px;
+        }
+
+        #eye2 img {
+            width: 30px;
+            position: relative;
+            left: -40px;
+            top: 10px;
+        }
+    </style>
+
 </head>
+
 <body>
     <div class="header">
-        
-           <div id="logo"> <a href="index.html">My Grocery</a></div>
-           <div id="navbar">
-           <ul>
-               <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Category</a>
+
+        <div id="logo"> <a href="index.html">My Grocery</a></div>
+        <div id="navbar">
+            <ul>
+                <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Category</a>
                     <div class="dropdown-content">
                         <a href="fruit.html">Fruits and vegetables</a>
                         <a href="dairy.html">Dairy and eggs</a>
@@ -47,51 +50,56 @@
                         <a href="mealKit.html">Meals</a>
                     </div>
                 </li>
-               <li><a href="weekDeal.html">Flyer</a></li>
-               <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Service</a>
-                <div class="dropdown-content">
-                    <a href="contactUs.html">Contact Us</a>
-                    <a href="#">Q & A</a>
-                </div>
-            </li>
-               <li style="float:right"><a href="#"><img src="images/Account.png" alt="account" title="account" class="headerimage"/>My Account</a></li>
-               <li style="float:right"><a href="#"><img src="images/shopping-cart.png" alt="shopping cart" title="shopping cart" class="headerimage"/></a></li>
-           </ul>
-           </div>
+                <li><a href="weekDeal.html">Flyer</a></li>
+                <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Service</a>
+                    <div class="dropdown-content">
+                        <a href="contactUs.html">Contact Us</a>
+                        <a href="#">Q & A</a>
+                    </div>
+                </li>
+                <li style="float:right"><a href="#"><img src="images/Account.png" alt="account" title="account"
+                            class="headerimage" />My Account</a></li>
+            </ul>
+        </div>
     </div>
     <div>
         <h1>Create account</h1>
-        <form  name="createAccountForm" id="createAccountForm" method="get" action="accountDone.html" autocomplete="on" onsubmit="return validateCreateAccountForm();">
+        <form name="createAccountForm" id="createAccountForm" method="get" action="accountDone.html" autocomplete="on"
+            onsubmit="return validateCreateAccountForm();">
             <fieldset>
-                <label for="email">Email</label><br/>
-                <input name="email" id="email" type="text" size="30" placeholder="John@gmail.com" autofocus="autofocus"/><br/>
-                <label for="password">Password</label><br/>
-                <input type="password" id="password" name="password" placeholder="8-12 characters, at least 1 number, no spaces" size="50" autofocus="autofocus" />
-                <a class="eye" id="eye1" onclick="changePasswordDisplay1();"><img src="images/close_eye.png" alt="close eye" title="close eye"></a> <br/> 
-                <label for="cPassword">Confirm password</label><br/>
-                <input type="password" id="cPassword" name="cPassword" size="50" autofocus="autofocus"/>
-                <a class="eye" id="eye2" onclick="changePasswordDisplay2();"><img src="images/close_eye.png" alt="close eye" title="close eye"></a><br/>
+                <label for="email">Email</label><br />
+                <input name="email" id="email" type="text" size="30" placeholder="John@gmail.com"
+                    autofocus="autofocus" /><br />
+                <label for="password">Password</label><br />
+                <input type="password" id="password" name="password"
+                    placeholder="8-12 characters, at least 1 number, no spaces" size="50" autofocus="autofocus" />
+                <a class="eye" id="eye1" onclick="changePasswordDisplay1();"><img src="images/close_eye.png"
+                        alt="close eye" title="close eye"></a> <br />
+                <label for="cPassword">Confirm password</label><br />
+                <input type="password" id="cPassword" name="cPassword" size="50" autofocus="autofocus" />
+                <a class="eye" id="eye2" onclick="changePasswordDisplay2();"><img src="images/close_eye.png"
+                        alt="close eye" title="close eye"></a><br />
             </fieldset>
             <p id="formbuttons">
-            <input type="reset" name="btnCancel" id="btnCancel" value="Cancel" />
-            <input type="submit" name="btnNext" id="btnNext" value="Create account" />
+                <input type="reset" name="btnCancel" id="btnCancel" value="Cancel" />
+                <input type="submit" name="btnNext" id="btnNext" value="Create account" />
             </p>
         </form>
     </div>
 
     <div id="footer">
         <p>Copyright &copy;My Grocery 2021</p>
-        
+
         <a href="#">
-        <img src="images/bxl-instagram-alt.png" alt="instagram" title="instagram" class="footerimage"/></a>
+            <img src="images/bxl-instagram-alt.png" alt="instagram" title="instagram" class="footerimage" /></a>
         <a href="#">
-        <img src="images/facebook3.png" alt="facebook" title="facebook" class="footerimage"/></a>
+            <img src="images/facebook3.png" alt="facebook" title="facebook" class="footerimage" /></a>
         <a href="#">
-        <img src="images/twitter.png" alt="twitter" title="twitter" class="footerimage"/></a>
-        
+            <img src="images/twitter.png" alt="twitter" title="twitter" class="footerimage" /></a>
+
     </div>
     <script>
-       function changePasswordDisplay1(){
+        function changePasswordDisplay1() {
             if ($("#password").attr("type") == "password") {
                 $("#password").attr("type", "text");
                 $("#eye1 img").get(0).setAttribute("src", "images/open_eye.png");
@@ -100,7 +108,7 @@
                 $("#eye1 img").get(0).setAttribute("src", "images/close_eye.png");
             }
         }
-        function changePasswordDisplay2(){
+        function changePasswordDisplay2() {
             if ($("#cPassword").attr("type") == "password") {
                 $("#cPassword").attr("type", "text");
                 $("#eye2 img").get(0).setAttribute("src", "images/open_eye.png");
@@ -111,6 +119,7 @@
         }
 
     </script>
-    
+
 </body>
+
 </html>
