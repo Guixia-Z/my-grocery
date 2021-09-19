@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="css/grocery.css" />
     <link rel="stylesheet" href="css/fruit.css" />
     <link rel="stylesheet" href="css/cart.css">
-    <script src="scripts/store.js"></script>
+    <script defer src="scripts/fetch.js"></script>
+
 </head>
 
 <body>
@@ -46,7 +47,7 @@
         </div>
     </div>
     <h1>Fruits & Vegetables</h1>
-    <p id="directions">Click "Add" on what you wish to purchase and review your selections in the <a
+    <p class="directions">Click "Add" on what you wish to purchase and review your selections in the <a
             href="#cart-shortcut" title="Jump to Cart">Cart
             below!</a></p>
     <div id="category-container">
@@ -260,6 +261,17 @@
             </div>
         </div>
     </div>
+    <!--recipe API-->
+    <h1 class="directions">
+        ✨&nbspNew feature!&nbsp✨ Search for recipes before placing your order...maybe you'll need something extra!
+    </h1>
+    <input id="searchTerm" type="text" placeholder="Enter food item" />
+    <button id="search">
+        Search
+    </button>
+    <div id="recipe-content">
+
+    </div>
     <!--cart-->
     <div class="cart-container">
         <h2 class="section-header" id="cart-shortcut">CART</h2>
@@ -292,7 +304,7 @@
             <img src="images/twitter.png" alt="twitter" title="twitter" class="footerimage" /></a>
 
     </div>
-
+    <script src="scripts/store.js"></script>
 </body>
 
 </html>
