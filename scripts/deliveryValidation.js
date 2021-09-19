@@ -1,6 +1,5 @@
 "use strict";
 
-
 function validateDeliveryInfoForm(){
     var fName = document.getElementById("firstName");
     if(fName.value.length === 0){
@@ -47,23 +46,46 @@ function validateDeliveryInfoForm(){
         return false;
     }
     
-    var streetName = document.getElementById("streetName");
-    if(streetName.value.length === 0){
+   var streetN = document.getElementById("streetName");
+    if(streetN.value.length === 0){
         alert("Please enter street name.");
-        streetName.focus();
-        streetName.style.backgroundColor = "rgba(255, 99, 71, 0.6)";
+        streetN.focus();
+        streetN.style.backgroundColor = "rgba(255, 99, 71, 0.6)";
+        return false;
+    }
+    var streetPattern = /^[A-Za-z ]*$/;
+    if(!(streetN.value.match(streetPattern))){
+        alert("Your street name seems a little bizarre.");
+        streetN.focus();
+        streetN.value = "";
+        streetN.style.backgroundColor = "rgba(255, 99, 71, 0.6)";
         return false;
     }
 
     var city = document.getElementById("city");
     if(city.value.length === 0){
-        alert("Please enter street name.");
-        streetName.focus();
-        streetName.style.backgroundColor = "rgba(255, 99, 71, 0.6)";
+        alert("Please enter city name.");
+        city.focus();
+        city.style.backgroundColor = "rgba(255, 99, 71, 0.6)";
         return false;
     }
+
+    var postCode = document.getElementById("postCode");
+    if(postCode.value.length === 0){
+        alert("Please enter post code.");
+        postCode.focus();
+        postCode.style.backgroundColor = "rgba(255, 99, 71, 0.6)";
+        return false;
+    }
+
     var tel = document.getElementById("telephone");
-    var telPattern = /^[1-9]{3})(-)([0-9]{3})(-)([0-9]{4})$/;
+    if(tel.value.length === 0){
+        alert("Please enter your phone number. It is important for us.");
+        tel.focus();
+        tel.style.backgroundColor = "rgba(255, 99, 71, 0.6)";
+        return false;
+    }
+    var telPattern = /^([1-9]{3})(-)([0-9]{3})(-)([0-9]{4})$/;
     if(!(tel.value.match(telPattern))){
         alert("Your telephone number need to be 888-888-8888");
         tel.focus();
@@ -73,4 +95,3 @@ function validateDeliveryInfoForm(){
     }
    
 }
-
