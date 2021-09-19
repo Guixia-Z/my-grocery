@@ -47,22 +47,22 @@
     <div class="container">
         <div>
             <h2>Every week, you'll receive fresh, pre-portioned ingredients and delicious dishes.</h2>
-            <p>There are no commitments, so you may halt or skip whenever you choose.</p>
+            <p style="color:red">There are no commitments, so you may halt or skip whenever you choose.</p>
 
 
             <form>
+                <fieldset class="checks">
+                    <legend>Recipes per week</legend>
+                    <input type="radio" id="single" name="Payment" />
+                    <label for="single" id="threeRecipes">3 Recipes per week for only $29.90</label>
+                    <input type="radio" id="multiple" name="Payment" />
+                    <label for="multiple" id="fourRecipes">5 Recipes per week for only $39.90</label>
+                </fieldset>
                 <fieldset class="text">
                     <legend>What kind of recipes do you like?</legend>
                     <label for="fname">What is your favorite food?</label>
                     <input type="text" id="fname" />
                     <input type="button" value="Add" id="addName" />
-                </fieldset>
-                <fieldset class="checks">
-                    <legend>Recipes per week</legend>
-                    <input type="radio" id="single" name="Payment" />
-                    <label for="single" id="threeRecipes">3 Recipes per week for only  $29.90</label>
-                    <input type="radio" id="multiple" name="Payment" />
-                    <label for="multiple" id="fourRecipes">5 Recipes per week for only  $39.90</label>
                 </fieldset>
                 <fieldset>
                     <legend>Pick start date</legend>

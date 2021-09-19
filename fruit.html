@@ -8,7 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery Store | Fruits and Vegetables</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/grocery.css" />
     <link rel="stylesheet" href="css/fruit.css" />
@@ -38,18 +40,22 @@
                         <a href="#">Q & A</a>
                     </div>
                 </li>
-                <li style="float:right"><a href="createAccount.html"><img src="images/Account.png" alt="account" title="account"
-                            class="headerimage" />My Account</a></li>
+                <li style="float:right"><a href="createAccount.html"><img src="images/Account.png" alt="account"
+                            title="account" class="headerimage" />My Account</a></li>
                 <li style="float:right"><a href="#"><img src="images/shopping-cart.png" alt="shopping cart"
                             title="shopping cart" class="headerimage" /></a></li>
             </ul>
         </div>
     </div>
     <h1>Fruits & Vegetables</h1>
+    <p id="directions">Click "Add" on what you wish to purchase and review your selections in the <a
+            href="#cart-shortcut" title="Jump to Cart">Cart
+            below!</a></p>
     <div id="category-container">
         <div id="aside">
             <ul>
-                <li><p>Category</p>
+                <li>
+                    <p>Category</p>
                     <ul>
                         <li><a class="active" href="fruit.html">Fruits and vegetables</a></li>
                         <li><a href="#">Dairy and eggs</a></li>
@@ -76,7 +82,7 @@
                         class="fruitImage" /><span class="shop-item-title">Bananas, bunch</span>
                 </span><br /><br />
                 <span class="shop-item-price">$2.00</span>
-                <span><button class="button shop-item-button" type="button">Add</button></span>
+                <span><button class="button shop-item-button" type="button" title="Add to cart">Add</button></span>
             </div>
 
             <div>
@@ -84,7 +90,7 @@
                         class="fruitImage" /><span class="shop-item-title">English Cucumber</span>
                 </span><br /><br />
                 <span class="shop-item-price">$1.99</span>
-                <span><button class="button shop-item-button" type="button">Add</button></span>
+                <span><button class="button shop-item-button" type="button" title="Add to cart">Add</button></span>
             </div>
 
             <div>
@@ -92,14 +98,14 @@
                         class="fruitImage" /><span class="shop-item-title">Green Onion</span>
                 </span><br /><br />
                 <span class="shop-item-price">$1.29</span>
-                <span><button class="button shop-item-button" type="button">Add</button></span>
+                <span><button class="button shop-item-button" type="button" title="Add to cart">Add</button></span>
             </div>
 
             <div><span><img src="images/fruits-and-vegetables/image4.png" alt="image4" title="image4"
                         class="fruitImage" /><span class="shop-item-title">Seedless Watermelon</span>
                 </span><br /><br />
                 <span class="shop-item-price">$4.99</span>
-                <span><button class="button shop-item-button" type="button">Add</button></span>
+                <span><button class="button shop-item-button" type="button" title="Add to cart">Add</button></span>
             </div>
 
             <div>
@@ -107,7 +113,7 @@
                         class="fruitImage" /><span class="shop-item-title">Corn</span>
                 </span><br /><br />
                 <span class="shop-item-price">$0.50</span>
-                <span><button class="button shop-item-button" type="button">Add</button></span>
+                <span><button class="button shop-item-button" type="button" title="Add to cart">Add</button></span>
             </div>
 
             <div>
@@ -115,7 +121,7 @@
                         class="fruitImage" /><span class="shop-item-title">Yellow Onions 3lb bag</span>
                 </span><br /><br />
                 <span class="shop-item-price">$2.50</span>
-                <span><button class="button shop-item-button" type="button">Add</button></span>
+                <span><button class="button shop-item-button" type="button" title="Add to cart">Add</button></span>
             </div>
 
             <div>
@@ -123,7 +129,7 @@
                         class="fruitImage" /><span class="shop-item-title">Celery Stalks</span>
                 </span><br /><br />
                 <span class="shop-item-price"><br />$1.99</span>
-                <span><button class="button shop-item-button" type="button">Add</button></span>
+                <span><button class="button shop-item-button" type="button" title="Add to cart">Add</button></span>
             </div>
 
             <div>
@@ -131,7 +137,7 @@
                         class="fruitImage" /><span class="shop-item-title">Lettuce Iceberg</span>
                 </span><br /><br />
                 <span class="shop-item-price"><br />$1.99</span>
-                <span><button class="button shop-item-button" type="button">Add</button></span>
+                <span><button class="button shop-item-button" type="button" title="Add to cart">Add</button></span>
             </div>
 
             <div>
@@ -139,7 +145,7 @@
                         class="fruitImage" /><span class="shop-item-title">Lemon</span>
                 </span><br /><br />
                 <span class="shop-item-price"><br />$1.09</span>
-                <span><button class="button shop-item-button" type="button">Add</button></span>
+                <span><button class="button shop-item-button" type="button" title="Add to cart">Add</button></span>
             </div>
 
             <div>
@@ -147,7 +153,7 @@
                         class="fruitImage" /><span class="shop-item-title">Sweet Green Peppers</span>
                 </span><br /><br />
                 <span class="shop-item-price"><br />$1.23</span>
-                <span><button class="button shop-item-button" type="button">Add</button></span>
+                <span><button class="button shop-item-button" type="button" title="Add to cart">Add</button></span>
             </div>
 
             <div>
@@ -155,7 +161,7 @@
                         class="fruitImage" /><span class="shop-item-title">Tomato Beefsteak Red</span>
                 </span><br /><br />
                 <span class="shop-item-price"><br />$1.47</span>
-                <span><button class="button shop-item-button" type="button">Add</button></span>
+                <span><button class="button shop-item-button" type="button" title="Add to cart">Add</button></span>
             </div>
 
             <div>
@@ -163,7 +169,7 @@
                         class="fruitImage" /><span class="shop-item-title">Broccoli</span>
                 </span><br /><br />
                 <span class="shop-item-price"><br />$2.59</span>
-                <span><button class="button shop-item-button" type="button">Add</button></span>
+                <span><button class="button shop-item-button" type="button" title="Add to cart">Add</button></span>
             </div>
 
             <div>
@@ -171,7 +177,7 @@
                         class="fruitImage" /><span class="shop-item-title">Cauliflower</span>
                 </span><br /><br />
                 <span class="shop-item-price"><br />$4.49</span>
-                <span><button class="button shop-item-button" type="button">Add</button></span>
+                <span><button class="button shop-item-button" type="button" title="Add to cart">Add</button></span>
             </div>
 
             <div>
@@ -179,14 +185,14 @@
                         class="fruitImage" /><span class="shop-item-title">Cantaloupe</span>
                 </span><br /><br />
                 <span class="shop-item-price"><br />$3.59</span>
-                <span><button class="button shop-item-button" type="button">Add</button></span>
+                <span><button class="button shop-item-button" type="button" title="Add to cart">Add</button></span>
             </div>
             <div>
                 <span><img src="images/fruits-and-vegetables/image15.png" alt="image15" title="image15"
                         class="fruitImage" /><span class="shop-item-title">Limes</span>
                 </span><br /><br />
                 <span class="shop-item-price"><br />$2.49</span>
-                <span><button class="button shop-item-button" type="button">Add</button></span>
+                <span><button class="button shop-item-button" type="button" title="Add to cart">Add</button></span>
             </div>
             <div>
                 <span><img src="images/fruits-and-vegetables/image16.png" alt="image16" title="image16"
@@ -194,14 +200,14 @@
                         Apples</span>
                 </span><br /><br />
                 <span class="shop-item-price"><br />$1.89</span>
-                <span><button class="button shop-item-button" type="button">Add</button></span>
+                <span><button class="button shop-item-button" type="button" title="Add to cart">Add</button></span>
             </div>
             <div>
                 <span><img src="images/fruits-and-vegetables/image17.png" alt="image17" title="image17"
                         class="fruitImage" /><span class="shop-item-title">Ginger</span>
                 </span><br /><br />
                 <span class="shop-item-price"><br />$1.39</span>
-                <span><button class="button shop-item-button" type="button">Add</button></span>
+                <span><button class="button shop-item-button" type="button" title="Add to cart">Add</button></span>
             </div>
             <div>
                 <span><img src="images/fruits-and-vegetables/image18.png" alt="image18" title="image18"
@@ -209,14 +215,14 @@
                         Potato</span>
                 </span><br /><br />
                 <span class="shop-item-price"><br />$11.19</span>
-                <span><button class="button shop-item-button" type="button">Add</button></span>
+                <span><button class="button shop-item-button" type="button" title="Add to cart">Add</button></span>
             </div>
             <div>
                 <span><img src="images/fruits-and-vegetables/image19.png" alt="image19" title="image19"
                         class="fruitImage" /><span class="shop-item-title">Raspberries 1/2 Pint</span>
                 </span><br /><br />
                 <span class="shop-item-price"><br />$5.79</span>
-                <span><button class="button shop-item-button" type="button">Add</button></span>
+                <span><button class="button shop-item-button" type="button" title="Add to cart">Add</button></span>
             </div>
             <div>
                 <span><img src="images/fruits-and-vegetables/image20.png" alt="image20" title="image20"
@@ -224,56 +230,59 @@
                         Orange</span>
                 </span><br /><br />
                 <span class="shop-item-price"><br />$2.39</span>
-                <span><button class="button shop-item-button" type="button">Add</button></span>
+                <span><button class="button shop-item-button" type="button" title="Add to cart">Add</button></span>
             </div>
             <div>
                 <span><img src="images/fruits-and-vegetables/image21.png" alt="image21" title="image21"
                         class="fruitImage" /><span class="shop-item-title">Rooster Garlic</span>
                 </span><br /><br />
                 <span class="shop-item-price"><br />$1.99</span>
-                <span><button class="button shop-item-button" type="button">Add</button></span>
+                <span><button class="button shop-item-button" type="button" title="Add to cart">Add</button></span>
             </div>
             <div>
                 <span><img src="images/fruits-and-vegetables/image22.png" alt="image22" title="image22"
                         class="fruitImage" /><span class="shop-item-title">Romaine Salad</span>
                 </span><br /><br />
                 <span class="shop-item-price"><br />$1.49</span>
-                <span><button class="button shop-item-button" type="button">Add</button></span>
+                <span><button class="button shop-item-button" type="button" title="Add to cart">Add</button></span>
             </div>
             <div>
                 <span><img src="images/fruits-and-vegetables/image23.png" alt="image23" title="image23"
                         class="fruitImage" /><span class="shop-item-title">Curly Parsley</span>
                 </span><br /><br />
                 <span class="shop-item-price"><br />$2.29</span>
-                <span><button class="button shop-item-button" type="button">Add</button></span>
+                <span><button class="button shop-item-button" type="button" title="Add to cart">Add</button></span>
             </div>
             <div>
                 <span><img src="images/fruits-and-vegetables/image24.png" alt="image24" title="image24"
                         class="fruitImage" /><span class="shop-item-title">French Breakfast Radish</span>
                 </span><br /><br />
                 <span class="shop-item-price"><br />$3.29</span>
-                <span><button class="button shop-item-button" type="button">Add</button></span>
+                <span><button class="button shop-item-button" type="button" title="Add to cart">Add</button></span>
             </div>
-        </div>
-        <div class="container content-section">
-            <h2 class="section-header">CART</h2>
-            <div class="cart-row">
-                <span class="cart-item cart-header cart-column">ITEM</span>
-                <span class="cart-price cart-header cart-column">PRICE</span>
-                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-            </div>
-            <div class="cart-items">
-            </div>
-            <div class="cart-total">
-                <strong class="cart-total-title">Total</strong>
-                <span class="cart-total-price">$0</span>
-            </div>
-            <form action="deliveryDetail.html" >
-               <input class="btn btn-primary btn-purchase" type="submit" name="purchase" id="purchase" value="PURCHASE"/> 
-            </form>
-            <!--button class="btn btn-primary btn-purchase" type="button" method="get" action="deliveryDetail.html">PURCHASE</button-->
         </div>
     </div>
+    <!--cart-->
+    <div class="cart-container">
+        <h2 class="section-header" id="cart-shortcut">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <form action="deliveryDetail.html">
+            <input class="btn btn-primary btn-purchase" type="submit" name="purchase" id="purchase"
+                value="CONFIRM ORDER" title="Place order and proceed to delivery details" />
+        </form>
+        <!--button class="btn btn-primary btn-purchase" type="button" method="get" action="deliveryDetail.html">PURCHASE</button-->
+    </div>
+
     <div id="footer">
         <p>Copyright &copy; My Grocery 2021</p>
 
