@@ -63,8 +63,31 @@
   opacity: 0.8;
 }
 
-.directions{
+
+#recipe-container{
+  text-align: center;
+  word-wrap: normal;
+  padding-top: 3em;
+  padding-bottom: 3em;
   font-family: Oswald, sans-serif;
   font-size: large;
-  text-align: center;
+}
+
+#recipe-container h1{
+  font-size: 34px;
+}
+
+#recipe-container button{
+  height: 2.4em;
+  width: 7em;
+  background-color: aqua;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+#recipe-container input{
+  width: 17em;
+  height: 2.4em;
+  border-radius: 8px;
+  font-size: 16px;
 }
