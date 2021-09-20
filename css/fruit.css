@@ -63,8 +63,7 @@
   opacity: 0.8;
 }
 
-
-#recipe-container{
+#recipe-container {
   text-align: center;
   word-wrap: normal;
   padding-top: 3em;
@@ -73,11 +72,11 @@
   font-size: large;
 }
 
-#recipe-container h1{
+#recipe-container h1 {
   font-size: 34px;
 }
 
-#recipe-container button{
+#recipe-container button {
   height: 2.4em;
   width: 7em;
   background-color: aqua;
@@ -85,9 +84,26 @@
   font-size: 16px;
 }
 
-#recipe-container input{
+#recipe-container input {
   width: 17em;
   height: 2.4em;
   border-radius: 8px;
   font-size: 16px;
+}
+
+#recipe-content {
+  float: left;
+}
+
+#recipe-content2 {
+  float: left;
+}
+
+#recipe-content3 {
+  float: left;
+}
+
+#recipe-content-wrap {
+  flex-direction: row;
+  padding-top: 2em;
 }

@@ -1,6 +1,7 @@
+//this fetch.js file is called from fruit.html, governs the API recipe search
+
 let searchButton = document.querySelector("#search");
 
-//Add an event listener to the button that runs the function sendApiRequest when it is clicked
 searchButton.addEventListener("click", () => {
   console.log("button pressed");
   sendApiRequest();
@@ -30,13 +31,58 @@ async function sendApiRequest() {
 function displayApiData(data) {
   document.querySelector("#recipe-content").innerHTML = `
     <div class="card" style="width: 18rem;">
-    <img src="${data.hits[0].recipe.image}" class="card-img-top" alt="...">
+    <img src="${data.hits[0].recipe.image}" class="card-img-top" alt="${
+    data.hits[0].recipe.label
+  }">
     <div class="card-body">
     <h5 class="card-title">${data.hits[0].recipe.label}</h5>
     <p class="card-text">Source:&nbsp${JSON.stringify(
       data.hits[0].recipe.source
     )}</p>
     <a href="${data.hits[0].recipe.url}" class="btn btn-primary">Source</a>
+    </div>
+    </div>
+    `;
+
+  document.querySelector("#recipe-content2").innerHTML = `
+    <div class="card" style="width: 18rem;">
+    <img src="${data.hits[1].recipe.image}" class="card-img-top" alt="${
+    data.hits[1].recipe.label
+  }">
+    <div class="card-body">
+    <h5 class="card-title">${data.hits[1].recipe.label}</h5>
+    <p class="card-text">Source:&nbsp;${JSON.stringify(
+      data.hits[1].recipe.source
+    )}</p>
+    <a href="${data.hits[1].recipe.url}" class="btn btn-primary">Source</a>
+    </div>
+    </div>
+    `;
+  document.querySelector("#recipe-content3").innerHTML = `
+    <div class="card" style="width: 18rem;">
+    <img src="${data.hits[2].recipe.image}" class="card-img-top" alt="${
+    data.hits[2].recipe.label
+  }">
+    <div class="card-body">
+    <h5 class="card-title">${data.hits[2].recipe.label}</h5>
+    <p class="card-text">Source:&nbsp;${JSON.stringify(
+      data.hits[2].recipe.source
+    )}</p>
+    <a href="${data.hits[2].recipe.url}" class="btn btn-primary">Source</a>
+    </div>
+    </div>
+    `;
+  document.querySelector("#recipe-content4").innerHTML = `
+    <div class="card" style="width: 18rem;">
+    <img src="${data.hits[3].recipe.image}" class="card-img-top" alt="${
+    data.hits[3].recipe.label
+  }">
+    <div class="card-body">
+    <h5 class="card-title">${data.hits[3].recipe.label}</h5>
+    <p class="card-text">Source:&nbsp;${JSON.stringify(
+      data.hits[3].recipe.source
+    )}</p>
+    <a href="${data.hits[3].recipe.url}" class="btn btn-primary">Source</a>
     </div>
     </div>
     `;
