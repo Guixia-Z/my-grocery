@@ -12,18 +12,21 @@ async function sendApiRequest() {
   let APP_ID = "fbb3e7b9";
   let API_KEY = "249daf789883c9071d2a6edeccf1915c";
   let searchTerms = document.getElementById("searchTerms").value;
+  try {
+    let response = await fetch(
+      `https://api.edamam.com/search?app_id=${APP_ID}&app_key=${API_KEY}&q=${searchTerms}`
+    );
 
-  let response = await fetch(
-    `https://api.edamam.com/search?app_id=${APP_ID}&app_key=${API_KEY}&q=${searchTerms}`
-  );
-  // ^^^ can't figure out how to make it user input
-  console.log(response); //checks for response
-  let data = await response.json();
-  console.log(data);
-  displayApiData(data);
+    console.log(response); //checks for response
+    let data = await response.json();
+    console.log(data);
+    displayApiData(data);
+  } catch (err) {
+    alert("Search is empty");
+  }
 }
 
-//function that does something with the data received from the API. The name of the function should be customized to whatever you are doing with the data
+//handles data received via API
 function displayApiData(data) {
   document.querySelector("#recipe-content").innerHTML = `
     <div class="card" style="width: 18rem;">
