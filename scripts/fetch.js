@@ -7,12 +7,14 @@ searchButton.addEventListener("click", () => {
 });
 
 //An asynchronous function to fetch data from the API.
+
 async function sendApiRequest() {
   let APP_ID = "fbb3e7b9";
   let API_KEY = "249daf789883c9071d2a6edeccf1915c";
-  let searchTerms = document.getElementByID("searchTerms").value;
+  let searchTerms = document.getElementById("searchTerms").value;
+
   let response = await fetch(
-    `https://api.edamam.com/search?app_id=${APP_ID}&app_key=${API_KEY}&q=${searchTerms.value}`
+    `https://api.edamam.com/search?app_id=${APP_ID}&app_key=${API_KEY}&q=${searchTerms}`
   );
   // ^^^ can't figure out how to make it user input
   console.log(response); //checks for response
