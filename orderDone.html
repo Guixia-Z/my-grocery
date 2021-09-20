@@ -12,6 +12,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/grocery.css" />
     <link rel="stylesheet" href="css/from.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#datepicker" ).datepicker();
+    } );
+    </script>
+    <script>
+        function changeFunction() {
+          var x = document.getElementById("datepicker").value;
+          document.getElementById("receiveDate").innerHTML = "You will receive your order tomorrow" + x + " at 4:00 PM. - 6:00 PM.";
+        }
+    </script>
 
 </head>
 
@@ -45,8 +58,17 @@
     </div>
     <div id="done-content">
         <h1>Thank you for your order.</h1><img src="images/heart.png" alt="heart" title="heart" />
-        <p>You will receive your order tomorrow at 4:00 PM. - 6:00 PM.</p>
-
+        <p id = "receiveDate">You will receive your order tomorrow at 4:00 PM. - 6:00 PM.</p>
+        <p id = "chooseDate">Or choose a more suitable date: <input type="text" id="datepicker" oninput="changeFunction()"></p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
     </div>
 
     <div id="footer">
